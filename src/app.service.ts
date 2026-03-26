@@ -75,7 +75,5 @@ export class AppService {
     await docRef.delete();
   }  
 
-  async test(): Promise<void> {
-    throw new BadRequestException('This is a test error');
-  }
+
 }

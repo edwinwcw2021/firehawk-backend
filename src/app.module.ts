@@ -11,7 +11,6 @@ import { LoggerModule } from 'nestjs-pino';
         transport: process.env.NODE_ENV !== 'production' 
           ? { target: 'pino-pretty', options: { colorize: true } } 
           : undefined,
-        // Log the request ID to track a single user's journey
         autoLogging: true, 
       },
     })
