@@ -9,4 +9,5 @@ export class AutomobileDto {
   acceleration: number;
   model_year: number;
   origin: string;
+  dt_edt: string;
 }

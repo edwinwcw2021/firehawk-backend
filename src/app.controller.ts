@@ -16,6 +16,16 @@ export class AppController {
     return this.appService.findAll();    
   }
 
+  @Get(':id')
+  @ApiOperation({ summary: 'Get a specific car record' })
+  @ApiResponse({ status: 200, description: 'Car record fetched', type: AutomobileDto })
+  async findOne(@Param('id') id: string) {
+    if (!id) {
+      throw new BadRequestException('ID query parameter is required');
+    }
+    return this.appService.findOne(id);
+  }
+
   @Post()
   @ApiOperation({ summary: 'Create a new car record' })
   @ApiResponse({ status: 201, description: 'Car created', type: AutomobileDto })  
