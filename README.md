@@ -60,6 +60,8 @@ To create a production-ready build:
 To debug the backend, press F5 in VS Code. Once the server is active, navigate to http://localhost:3068/docs/ to access the Swagger UI, where you can test the API endpoints directly.
 ![node1](https://firehawk.vagweb.com/images/node1.gif)
 
+https://firehawk.vagweb.com/images/node1.gif
+
 
 ## Description
 
